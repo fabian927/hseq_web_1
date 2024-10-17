@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Create-HSEQ.doc</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/stile_user_create.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch('nav_bar.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+    <div class="background-container">
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <section class="col-8 justify-content-center">
+                    <div class="row">
+                        <div class="col">
+                            <div id="form">
+                                <form action="" class="form-control">
+                                    <div class="text-center mb-3">
+                                        <h2>Crear Usuario</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="name" placeholder="Nombres">
+                                                <label for="name">Nombres</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="last_name" placeholder="Apellidos">
+                                                <label for="last_name">Apellidos</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="tipe_doc" aria-label="Floating label select example">
+                                                  <option selected>...</option>
+                                                  <option value="1">Cedula de Ciudadania</option>
+                                                  <option value="2">Cedula de Extranjeria</option>
+                                                  <option value="3">Pasaporte</option>
+                                                </select>
+                                                <label for="tipe_doc">Tipo de Documento</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="number_doc" placeholder="Número de Documento">
+                                                <label for="number_doc">Número de Documento</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="date" class="form-control" id="birthdate" placeholder="Fecha de Nacimiento">
+                                                <label for="birthdate">Fecha de nacimiento</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                                                <label for="email">Correo Electronico</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="phone" placeholder="Telefono">
+                                                <label for="phone">Telefono</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="roll" placeholder="Roll">
+                                                <label for="roll">Roll</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="address" placeholder="Dirección">
+                                                <label for="address">Dirección</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="population" aria-label="Floating label select example">
+                                                  <option selected>...</option>
+                                                  <option value="1">Rural</option>
+                                                  <option value="2">Urbano</option>
+                                                </select>
+                                                <label for="population">Población</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="departament" aria-label="Floating label select example">
+                                                  <option selected>...</option>
+                                                  <option value="1">Amazonas</option>
+                                                  <option value="2">Antioquia</option>
+                                                  <option value="3">Arauca</option>
+                                                  <option value="4">Atlantico</option>
+                                                  <option value="5">Bolivar</option>
+                                                  <option value="6">Boyaca</option>
+                                                  <option value="7">Bolivar</option>
+                                                  <option value="8">meta</option>
+                                                </select>
+                                                <label for="departament">Departamento</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="municipality" aria-label="Floating label select example">
+                                                  <option selected>...</option>
+                                                  <option value="1">Acacias</option>
+                                                  <option value="2">Barranca de upía</option>
+                                                  <option value="2">Cabuyaro</option>
+                                                  <option value="2">Cubarral</option>
+                                                  <option value="2">Cumaral</option>
+                                                  <option value="2">San Martin</option>
+                                                  <option value="2">Vista Hermosa</option>
+                                                  <option value="2">Villavicencio</option>
+                                                </select>
+                                                <label for="municipality">Municipio</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <button id="login" class="btn btn-primary rounded-5" type="button">Ingresar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+     
+    <script src="../js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap/popper.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.js"></script>
+</body>
+</html>
